@@ -1,21 +1,7 @@
 <?php
-// ── Configuração do banco de dados ──────────────────────────
-// Altere as credenciais conforme o seu ambiente
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'brunosurfbd'); // nome do banco de dados criado para o projeto
-define('DB_USER', 'root');       // seu usuário do MySQL
-define('DB_PASS', '');           // sua senha do MySQL
-define('DB_CHARSET', 'utf8mb4');
 
-function conectar(): PDO
-{
-  $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET;
-  $opcoes = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-  ];
-  return new PDO($dsn, DB_USER, DB_PASS, $opcoes);
-}
+
+require_once 'db.php'; // conexão centralizada
 
 // ── Filtros recebidos via GET ────────────────────────────────
 $categoria = trim($_GET['categoria'] ?? '');
@@ -135,10 +121,10 @@ function sel(string $campo, string $valor): string
 
   <!-- NAV -->
   <nav>
-    <a href="index.php" class="logo">Bruno <span>surf</span></a>
+    <a href="index.html" class="logo">Bruno <span>surf</span></a>
     <ul class="nav-links">
       <li><a href="equipamentos.php" class="active">Equipamentos</a></li>
-      <li><a href="aulas.php">Aulas</a></li>
+      <li><a href="escola.php">Aulas</a></li>
       <li><a href="galeria.php">Galeria</a></li>
       <li><a href="clima.php">Clima</a></li>
     </ul>

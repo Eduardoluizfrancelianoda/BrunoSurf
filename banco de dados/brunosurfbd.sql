@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25/05/2026 às 21:04
+-- Tempo de geração: 25/05/2026 às 21:40
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -31,17 +31,27 @@ USE `brunosurfbd`;
 
 CREATE TABLE `agendamentos` (
   `id` int(11) NOT NULL,
+  `nome_completo` varchar(100) NOT NULL,
+  `whatsapp` varchar(20) NOT NULL,
   `aula_id` int(11) NOT NULL,
-  `nome_aluno` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `telefone` varchar(20) DEFAULT NULL,
-  `data_aula` date NOT NULL,
+  `data_preferida` date NOT NULL,
   `horario` time NOT NULL,
   `num_pessoas` int(11) NOT NULL DEFAULT 1,
+  `metodo_pagamento` varchar(30) NOT NULL,
+  `observacoes` text DEFAULT NULL,
   `valor_total` decimal(10,2) NOT NULL,
-  `status` varchar(20) NOT NULL DEFAULT 'pendente',
+  `status` enum('pendente','confirmado','cancelado') NOT NULL DEFAULT 'pendente',
   `data_agendamento` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `agendamentos`
+--
+
+INSERT INTO `agendamentos` (`id`, `nome_completo`, `whatsapp`, `aula_id`, `data_preferida`, `horario`, `num_pessoas`, `metodo_pagamento`, `observacoes`, `valor_total`, `status`, `data_agendamento`) VALUES
+(1, 'Maria Oliveira', '11 98888-1111', 1, '2025-06-10', '08:00:00', 1, 'pix', 'Primeira vez no surf, tenho medo de ondas grandes.', 120.00, 'confirmado', '2026-05-25 16:40:02'),
+(2, 'João e Ana Silva', '11 97777-2222', 1, '2025-06-10', '08:00:00', 3, 'visa', 'Somos 3 amigos, queremos aula juntos.', 90.00, 'pendente', '2026-05-25 16:40:02'),
+(3, 'Carlos Mendes', '11 96666-3333', 2, '2025-06-11', '10:00:00', 1, 'elo', NULL, 180.00, 'confirmado', '2026-05-25 16:40:02');
 
 -- --------------------------------------------------------
 
@@ -62,6 +72,15 @@ CREATE TABLE `aulas` (
   `disponivel` tinyint(1) NOT NULL DEFAULT 1,
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `aulas`
+--
+
+INSERT INTO `aulas` (`id`, `nivel`, `titulo`, `descricao`, `duracao_minutos`, `max_alunos`, `preco_individual`, `preco_pacote5`, `itens_inclusos`, `disponivel`, `data_cadastro`) VALUES
+(1, 'iniciante', 'Aula Inaugural do Surf', 'Perfeita para quem nunca surfou. Do equilíbrio na areia à primeira onda de pé.', 90, 5, 120.00, NULL, 'prancha, lycra', 1, '2026-05-25 16:34:38'),
+(2, 'intermediario', 'Evolução Técnica', 'Para quem já ficou em pé e quer evoluir manobras, leitura de ondas e posicionamento. Inclui análise de vídeo pós-aula.', 120, 2, 180.00, 750.00, 'análise de vídeo', 1, '2026-05-25 16:34:38'),
+(3, 'avancado', 'Performance Avançada', 'Para quem quer dominar manobras, ganhar velocidade e surfar com consistência. Feedback individualizado.', 120, 1, 220.00, 950.00, 'análise de vídeo detalhada', 1, '2026-05-25 16:34:38');
 
 -- --------------------------------------------------------
 
@@ -138,13 +157,13 @@ ALTER TABLE `equipamentos`
 -- AUTO_INCREMENT de tabela `agendamentos`
 --
 ALTER TABLE `agendamentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `aulas`
 --
 ALTER TABLE `aulas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `equipamentos`
