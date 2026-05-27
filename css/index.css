@@ -145,7 +145,7 @@
 
         /* ── INTRO STRIP ── */
         .intro-strip {
-            background: var(--teal);
+            background: linear-gradient(180deg, #1896B3 0%, #ffffff 100%);
             padding: 52px 48px;
             text-align: center;
         }
@@ -169,7 +169,7 @@
         /* ── AULAS SECTION ── */
         .aulas {
             padding: 80px 48px;
-            background: #f0fbfb;
+            background: #fff;
         }
 
         .cards-grid {
@@ -405,7 +405,7 @@
         /* ── CLIMA ── */
         .clima {
             padding: 80px 48px;
-            background: #f9f9f9;
+            background: #fff;
         }
 
         .clima h2 {
@@ -692,7 +692,7 @@
 
         /* ── FOOTER ── */
         footer {
-            background: var(--gradient-bottom);
+            background: linear-gradient(180deg, #ffffff 0%,  #1896B3 80%);
             padding: 48px 48px 32px;
             margin-top: 60px;
         }
