@@ -133,7 +133,7 @@ $metodos = [
 <body>
 
 <nav>
-  <a href="index.html" class="logo">Bruno <span>surf</span></a>
+  <a href="index.php" class="logo">Bruno <span>surf</span></a>
   <ul class="nav-links">
     <li><a href="equipamentos.php">Equipamentos</a></li>
     <li><a href="escola.php" class="active">Aulas</a></li>
