@@ -65,7 +65,7 @@
                     <div class="price-main">R$120 <span style="font-size:.8rem;font-weight:400">/ pessoa</span></div>
                     <div class="price-sub">R$ 90 em grupo de 3+</div>
                 </div>
-                <button class="btn-agendar">agendar</button>
+                <button class="btn-agendar" href="agendamento.php">agendar</button>
             </div>
 
             <!-- Card 2: Intermediário -->
@@ -83,7 +83,7 @@
                     <div class="price-main">R$180 <span style="font-size:.8rem;font-weight:400">/ pessoa</span></div>
                     <div class="price-sub">Pacote 5 aulas: R$ 750</div>
                 </div>
-                <button class="btn-agendar">agendar</button>
+                <button class="btn-agendar" href="agendamento.php">agendar</button>
             </div>
 
             <!-- Card 3: Avançado -->
@@ -101,7 +101,7 @@
                     <div class="price-main">R$220 <span style="font-size:.8rem;font-weight:400">/ pessoa</span></div>
                     <div class="price-sub">Pacote 5 aulas: R$950</div>
                 </div>
-                <button class="btn-agendar">agendar</button>
+                <button class="btn-agendar" onclick="document.getElementById('agendamento.php')">agendar</button>
             </div>
 
         </div>
@@ -245,7 +245,7 @@
             </div>
         </div>
         <div class="center-btn">
-            <button class="btn-outline" onclick="document.location='equipamentos.php'">Ver mais aulas</button>
+            <button class="btn-outline" onclick="document.location='equipamentos.php'">Ver mais equipamentos</button>
         </div>
     </section>
 

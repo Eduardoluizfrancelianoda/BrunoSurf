@@ -97,7 +97,7 @@
 
   .btn-agendar {
     display:block; width:100%; margin-top:14px;
-    padding:11px; background:var(--orange); color:#fff;
+    padding:11px; background:var(--teal); color:var(--teal-dark);
     border:none; border-radius:10px; font-family:'DM Sans',sans-serif;
     font-size:.84rem; font-weight:700; cursor:pointer;
     text-align:center; text-decoration:none;

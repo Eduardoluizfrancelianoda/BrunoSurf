@@ -59,10 +59,10 @@ $nivel_color = ['iniciante' => '#2ec4c4', 'intermediario' => '#e8622a', 'avancad
 <body>
 
 <nav>
-  <a href="index.html" class="logo">Bruno <span>surf</span></a>
+  <a href="index.php" class="logo">Bruno <span>surf</span></a>
   <ul class="nav-links">
     <li><a href="equipamentos.php">Equipamentos</a></li>
-    <li><a href="aulas.php" class="active">Aulas</a></li>
+    <li><a href="escola.php" class="active">Aulas</a></li>
     <li><a href="galeria.php">Galeria</a></li>
     <li><a href="clima.php">Clima</a></li>
   </ul>

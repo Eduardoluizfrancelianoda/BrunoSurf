@@ -88,7 +88,7 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('../IMG/bruno_e_suas_esposas.avif') center/cover no-repeat;
+            background: url('../IMG/bruno_e_suas_alunas.avif') center/cover no-repeat;
             filter: brightness(0.75);
         }
 
@@ -751,9 +751,9 @@
         }
 
         .payment-tag {
-            background: rgba(255, 255, 255, 0.9);
+            
             border-radius: 6px;
-            padding: 4px 12px;
+            padding: 4px 8px;
             font-size: 0.7rem;
             font-weight: 700;
             color: var(--dark);

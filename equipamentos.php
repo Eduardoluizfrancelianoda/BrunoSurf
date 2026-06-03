@@ -121,7 +121,7 @@ function sel(string $campo, string $valor): string
 
   <!-- NAV -->
   <nav>
-    <a href="index.html" class="logo">Bruno <span>surf</span></a>
+    <a href="index.php" class="logo">Bruno <span>surf</span></a>
     <ul class="nav-links">
       <li><a href="equipamentos.php" class="active">Equipamentos</a></li>
       <li><a href="escola.php">Aulas</a></li>
