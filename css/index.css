@@ -9,6 +9,7 @@
             --white: #ffffff;
             --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%);
             --gradient-bottom: linear-gradient(180deg, #2ec4c4 0%, #1a8fa0 100%);
+            font-size: 16px;
         }
 
         * {
@@ -145,8 +146,8 @@
 
         /* ── INTRO STRIP ── */
         .intro-strip {
-            background: linear-gradient(180deg, #1896B3 0%, #ffffff 100%);
-            padding: 52px 48px;
+            background: linear-gradient(180deg, #1896B3 60%, #ffffff 100%);
+            padding: 90px 48px;
             text-align: center;
         }
 
@@ -317,9 +318,9 @@
 
         .equipamentos h2 {
             text-align: center;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
             font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-            font-weight: 900;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
@@ -410,9 +411,9 @@
 
         .clima h2 {
             text-align: center;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
             font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-            font-weight: 900;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
@@ -692,8 +693,8 @@
 
         /* ── FOOTER ── */
         footer {
-            background: linear-gradient(180deg, #ffffff 0%,  #1896B3 80%);
-            padding: 48px 48px 32px;
+            background: linear-gradient(180deg, #ffffff 0%,  #1896B3 50%);
+            padding: 68px 48px 32px;
             margin-top: 60px;
         }
 

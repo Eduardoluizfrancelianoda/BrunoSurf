@@ -74,191 +74,7 @@ function esc(string $value): string
     <title>Clima – Bruno Surf</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/equipamentos.css">
-    <style>
-      .clima-section {
-        background: #f9fbfc;
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 30px;
-        box-shadow: 0 22px 55px rgba(0,0,0,0.05);
-      }
-      .clima-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-      }
-      .clima-card {
-        background: #fff;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 24px;
-      }
-      .clima-card h4 {
-        font-size: 0.85rem;
-        font-weight: 700;
-        color: var(--teal-dark);
-        margin-bottom: 18px;
-      }
-      .temp-display {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-        margin-bottom: 24px;
-      }
-      .temp-icon {
-        font-size: 3rem;
-      }
-      .temp-num {
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--dark);
-      }
-      .clima-stats {
-        display: grid;
-        gap: 12px;
-      }
-      .stat-row {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: var(--mid);
-        font-size: 0.85rem;
-      }
-      .stat-label {
-        min-width: 90px;
-        padding: 7px 10px;
-        border-radius: 10px;
-        text-transform: uppercase;
-        font-size: 0.72rem;
-        font-weight: 700;
-        background: #eef7f7;
-        color: var(--teal-dark);
-        text-align: center;
-      }
-      .stat-val {
-        color: var(--mid);
-      }
-      .registros {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        margin-bottom: 24px;
-      }
-      .registro {
-        flex: 1 1 140px;
-        min-width: 140px;
-        background: var(--light-bg);
-        border-radius: 14px;
-        padding: 18px 16px;
-        text-align: center;
-      }
-      .registro .icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 24px;
-        height: 24px;
-        font-size: 0.85rem;
-        margin: 0 auto 8px;
-      }
-      .registro .icon img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-      .registro .label {
-        display: block;
-        font-size: 0.78rem;
-        font-weight: 700;
-        margin-bottom: 4px;
-      }
-      .registro .val {
-        font-size: 0.83rem;
-        color: var(--mid);
-      }
-      .condicoes {
-        display: grid;
-        gap: 14px;
-      }
-      .cond-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 16px;
-        background: var(--light-bg);
-        border-radius: 14px;
-      }
-      .cond-left {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-      }
-      .cond-left .icon {
-        font-size: 1.15rem;
-      }
-      .cond-left .icon img {
-        width: 22px;
-        height: 22px;
-        object-fit: contain;
-      }
-      .cond-info h5 {
-        font-size: 0.88rem;
-        margin-bottom: 4px;
-        font-weight: 700;
-      }
-      .cond-info p {
-        margin: 0;
-        color: var(--mid);
-        font-size: 0.82rem;
-      }
-      .dot {
-        flex-shrink: 0;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--teal);
-      }
-      .center-btn-teal {
-        text-align: center;
-        margin-top: 32px;
-      }
-      .btn-teal {
-        padding: 12px 34px;
-        background: var(--orange);
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        font-size: 0.85rem;
-        font-weight: 700;
-        cursor: pointer;
-      }
-      .city-filter {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-bottom: 24px;
-        flex-wrap: wrap;
-      }
-      .city-filter label {
-        font-size: 0.86rem;
-        font-weight: 700;
-        color: var(--mid);
-      }
-      .city-filter select {
-        min-width: 220px;
-        padding: 12px 14px;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        background: #fff;
-        color: var(--dark);
-        font-size: 0.95rem;
-      }
-      @media (max-width: 780px) {
-        .clima-grid { grid-template-columns: 1fr; }
-        .page { padding: 36px 18px 60px; }
-      }
-    </style>
+    <link rel="stylesheet" href="css/clima.css">
 </head>
 
 <body>
@@ -298,19 +114,19 @@ function esc(string $value): string
                     </div>
                     <div class="clima-stats">
                         <div class="stat-row">
-                            <span class="stat-label">Vento</span>
+                            <span class="stat-label vento">Vento</span>
                             <span class="stat-val"><?= esc($weather['vento']) ?></span>
                         </div>
                         <div class="stat-row">
-                            <span class="stat-label">Umidade</span>
+                            <span class="stat-label umidade">Umidade</span>
                             <span class="stat-val"><?= esc($weather['umidade']) ?></span>
                         </div>
                         <div class="stat-row">
-                            <span class="stat-label">Pressão</span>
+                            <span class="stat-label pressao">Pressão</span>
                             <span class="stat-val"><?= esc($weather['pressao']) ?></span>
                         </div>
                         <div class="stat-row">
-                            <span class="stat-label">Arco-íris</span>
+                            <span class="stat-label arco">Arco-íris</span>
                             <span class="stat-val"><?= esc($weather['arco']) ?></span>
                         </div>
                     </div>
