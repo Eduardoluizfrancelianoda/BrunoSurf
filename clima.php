@@ -1,4 +1,7 @@
 ﻿<?php
+require_once 'carrinho_helpers.php'; // sessão + funções do carrinho
+
+$cart_count = carrinho_total_itens();
 $cidades = [
     'São Paulo, SP' => [
         'icon' => '🌧️',
@@ -75,6 +78,7 @@ function esc(string $value): string
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/equipamentos.css">
     <link rel="stylesheet" href="css/clima.css">
+    <link rel="stylesheet" href="css/carrinho.css">
 </head>
 
 <body>
@@ -87,6 +91,19 @@ function esc(string $value): string
             <li><a href="escola.php">Aulas</a></li>
             <li><a href="galeria.php">Galeria</a></li>
             <li><a href="clima.php" class="active">Clima</a></li>
+            <li>
+        <a href="carrinho.php" class="cart-link">
+          <svg viewBox="0 0 24 24" class="cart-icon">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.6 13.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6L23 6H6" />
+          </svg>
+          Carrinho
+          <?php if ($cart_count > 0): ?>
+            <span class="cart-badge"><?= $cart_count ?></span>
+          <?php endif; ?>
+        </a>
+      </li>
         </ul>
     </nav>
 
