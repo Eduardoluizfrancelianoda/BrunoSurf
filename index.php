@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Surf – Aqui, a onda é boa</title>
+    <title>Bruno Surf: Aqui, a onda é boa</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -41,7 +41,7 @@
 
     <!-- INTRO STRIP -->
     <section class="intro-strip" id="intro">
-        <h2>Tenha aulas de diversos níveis</h2>
+        <h2>Tenha aulas de diversos ní­veis</h2>
         <p>Aulas ministradas por Bruno Nascimento, instrutor certificado com mais de 8 anos de experiência. Do remo até
             a primeira onda em pé.</p>
     </section>
@@ -123,125 +123,81 @@
             </script>
 
             <!-- Row 1 -->
-            <div class="product-card">
-                <div class="product-placeholder">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                </div>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/raquete_de_beach_tennis_heroes_the_bull_2026.webp' alt='Equipamento 1'>
                 <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
                 <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
                 <p class="product-price-pix">R$309,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                </div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/cadeira-premium.jpg' alt='Equipamento 2'>
+                <h4>Cadeira de Praia Dobrável Premium</h4>
+                <p class="product-price-old">R$280,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$225,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                </div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/guarda_sol.jpg' alt='Equipamento 3'>
+                <h4>Guarda-Sol Grande UV50</h4>
+                <p class="product-price-old">R$210,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$169,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder">
-                    <svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                </div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/cooler.webp' alt='Equipamento 4'>
+                <h4>Cooler Térmico de 24L</h4>
+                <p class="product-price-old">R$170,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$135,00 no pix</p>
             </div>
 
             <!-- Row 2 -->
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/Prancha-de-Surf-Longboard.jpg' alt='Equipamento 5'>
+                <h4>Prancha de Surf Longboard</h4>
+                <p class="product-price-old">R$550,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$439,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/camisa-lycra-preta-frente.jpg' alt='Equipamento 6'>
+                <h4>Lycra de Proteção Solar</h4>
+                <p class="product-price-old">R$95,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$75,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/chinelo.jpg' alt='Equipamento 7'>
+                <h4>Chinelo Surf Comfort</h4>
+                <p class="product-price-old">R$85,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$65,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/sacola-termica.webp' alt='Equipamento 8'>
+                <h4>Bolsa Térmica de Praia</h4>
+                <p class="product-price-old">R$145,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$115,00 no pix</p>
             </div>
 
             <!-- Row 3 -->
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/toalha_de_praia_piscina.webp' alt='Equipamento 9'>
+                <h4>Toalha de Praia Extra Grande</h4>
+                <p class="product-price-old">R$125,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$99,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/snorkel.webp' alt='Equipamento 10'>
+                <h4>Máscara de Mergulho com Snorkel</h4>
+                <p class="product-price-old">R$220,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$175,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/rede-de-frescobol.webp' alt='Equipamento 11'>
+                <h4>Rede de Frescobol Pro</h4>
+                <p class="product-price-old">R$180,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$149,00 no pix</p>
             </div>
-            <div class="product-card">
-                <div class="product-placeholder"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                <h4>Raquete de Beach Tennis Heroes The Bull 2026</h4>
-                <p class="product-price-old">R$390,00 por mês em 10x sem juros ou</p>
-                <p class="product-price-pix">R$309,00 no pix</p>
+            <div class="product-card" onclick="window.location.href='equipamentos.php'; " style="cursor: pointer;">
+                <img src='IMG/IMGSequip/oculos.jpg' alt='Equipamento 12'>
+                <h4>Óculos de Sol Polarizado</h4>
+                <p class="product-price-old">R$135,00 por mês em 10x sem juros ou</p>
+                <p class="product-price-pix">R$109,00 no pix</p>
             </div>
         </div>
         <div class="center-btn">
@@ -399,3 +355,5 @@
 </body>
 
 </html>
+
+
